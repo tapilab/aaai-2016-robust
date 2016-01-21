@@ -1,8 +1,22 @@
 # aaai-2016-robust
 
-This github contains all the required code to replicate the experiments from the AAAI 2016 paper titled "Robust Text Classification in the Presence of Confounding Bias".
+This github repository contains all the required code to replicate the experiments from the AAAI 2016 paper entitled "Robust Text Classification in the Presence of Confounding Bias".
 
-It is organized as follow:
+## Dependencies
+
+If you want to re-run the programs to collect the data from the Canadian Parliament, you will need [Python 2 and the Scrapy module](http://doc.scrapy.org/en/latest/faq.html#does-scrapy-work-with-python-3).
+
+The rest of the repo uses Python 3 and the following Python modules:
+
+- numpy
+- scipy
+- matplotlib
+- sklearn
+- bs4 (only for the Canadian Parliament experiments)
+
+## Organization
+
+Following is a description of the files that are available through this repo. The most important files are the iPython notebooks (\*.ipynb files), they use the other files to run the experiments and plot the results.
 
 ```bash
 .
