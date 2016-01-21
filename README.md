@@ -6,21 +6,6 @@ It is organized as follow:
 
 ```bash
 .
-├── data_collect # stores the script to collect the data
-│   ├── hansard # scrapper to collect the data for the Canadian Parliament experiments.
-│   │   ├── hansard
-│   │   │   ├── __init__.py
-│   │   │   ├── items.py
-│   │   │   ├── pipelines.py
-│   │   │   ├── settings.py
-│   │   │   └── spiders
-│   │   │       ├── __init__.py
-│   │   │       └── HansardSpider.py
-│   │   └── scrapy.cfg
-│   └── tweets # script using the Twitter API to collect data for the Twitter experiments.
-│       ├── geolocated_tweets.py
-│       ├── get_users_gender.py
-│       └── user_tweets.py
 ├── notebook # analysis folder where the iPython notebooks and the Python helper scripts are stored.
 │   ├── CanadianParliament.ipynb # Canadian Parliament experiments.
 │   ├── DemographicTweets.ipynb # Twitter experiments.
@@ -34,5 +19,20 @@ It is organized as follow:
 │   ├── most_changing_coef.py # functions to compute and plot the change in coefficients.
 │   ├── simpson_paradox.py # functions to compute and plot features that display Simpson's paradox.
 │   └── top_terms_table.py # function to display the terms most correlated with the confounder.
+├── data_collect # stores the script to collect the data
+│   ├── hansard # scrapper to collect the data for the Canadian Parliament experiments.
+│   │   ├── hansard
+│   │   │   ├── __init__.py
+│   │   │   ├── items.py
+│   │   │   ├── pipelines.py
+│   │   │   ├── settings.py
+│   │   │   └── spiders
+│   │   │       ├── __init__.py
+│   │   │       └── HansardSpider.py
+│   │   └── scrapy.cfg
+│   └── tweets # scripts using the Twitter API to collect data for the Twitter experiments.
+│       ├── geolocated_tweets.py
+│       ├── get_users_gender.py
+│       └── user_tweets.py
 └── README.md # this help file.
 ```
