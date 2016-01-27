@@ -11,8 +11,10 @@ The rest of the repo uses Python 3 and the following Python modules:
 - numpy
 - scipy
 - matplotlib
-- sklearn
+- scikit-learn
 - bs4 (only for the Canadian Parliament experiments)
+
+See requirements.txt for more details.
 
 ## Organization
 
