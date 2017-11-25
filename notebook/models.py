@@ -300,3 +300,8 @@ class BackdoorAdjustment:
         Xc = sparse.hstack((X, c_fts))
                                      
         self.clf.fit(Xc, y)
+
+def backdoor_adjustment_var_C(X, y, z, c, rand, feature_names):
+  clf = BackdoorAdjustment()
+  clf.fit(X, y, z, c_ft_value=c)
+  return clf
